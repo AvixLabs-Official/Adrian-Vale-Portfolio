@@ -1,0 +1,20 @@
+{
+  "name": "adrian-vale-portfolio",
+  "version": "1.0.0",
+  "description": "Adrian Vale - Creative Director & Digital Strategist Portfolio",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "creative-director",
+    "portfolio",
+    "brand-strategy",
+    "art-direction",
+    "ui-ux",
+    "freelance"
+  ],
+  "author": "Antigravity Freelance Demo",
+  "license": "MIT"
+}

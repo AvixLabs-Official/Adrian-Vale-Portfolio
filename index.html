@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adrian Vale — Creative Director & Digital Strategist</title>
+  <meta name="description" content="Adrian Vale is a creative director and digital strategist creating memorable brands and digital experiences for ambitious teams. Based in London, working worldwide.">
+  <meta name="keywords" content="Creative Director London, Digital Strategist, Brand Identity, UI UX Design, Web Design Portfolio, Adrian Vale">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Adrian Vale — Creative Director & Digital Strategist">
+  <meta property="og:description" content="I turn ambitious ideas into brands people remember. Creative direction, brand strategy, and digital experiences.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Custom Desktop Cursor -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring">
+    <span class="cursor-label" id="cursor-label"></span>
+  </div>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="header" id="main-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-name" aria-label="Adrian Vale Home">ADRIAN VALE</a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#expertise" class="nav-link">Expertise</a></li>
+          <li><a href="#writing" class="nav-link">Writing</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions-desktop">
+        <a href="#contact" class="btn btn-primary">Let's Talk →</a>
+      </div>
+
+      <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle Mobile Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Fullscreen Mobile Overlay Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <span class="brand-name">ADRIAN VALE</span>
+      <button class="modal-close-btn" id="mobile-drawer-close" style="color:#FFF;">✕</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#writing">Writing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div>
+      <a href="#contact" class="btn btn-primary" style="width:100%;">Start a Conversation →</a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="reveal-on-scroll">
+          <div class="hero-subtitle">Creative Director • Digital Strategist</div>
+          <h1 class="hero-title">
+            ADRIAN<br>
+            <span>VALE</span>
+          </h1>
+          <p class="hero-statement">
+            "I turn ambitious ideas into brands people remember."
+          </p>
+          <div style="display:flex; gap:20px; flex-wrap:wrap;">
+            <a href="#work" class="btn btn-primary">View My Work →</a>
+            <a href="#contact" class="btn btn-outline">Let's Work Together</a>
+          </div>
+
+          <div class="hero-meta-strip">
+            <div>Based in London</div>
+            <div>•</div>
+            <div>Working Worldwide</div>
+          </div>
+        </div>
+
+        <div class="hero-portrait-box reveal-on-scroll" id="hero-portrait">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop" alt="Adrian Vale Creative Director" class="hero-portrait-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       EDITORIAL INTRODUCTION
+       ========================================================================== -->
+  <section class="section-padding" id="about">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="reveal-on-scroll">
+          <span class="section-tag">ABOUT</span>
+          <h2 class="intro-heading">
+            I WORK AT THE INTERSECTION OF STRATEGY, DESIGN AND TECHNOLOGY.
+          </h2>
+        </div>
+
+        <div class="reveal-on-scroll">
+          <p class="intro-copy">
+            I help ambitious teams find clarity in complexity—then turn that clarity into identities, products, and experiences people remember.
+          </p>
+          <p class="intro-copy" style="margin-top:20px;">
+            Over the past decade, I've collaborated with startup founders, luxury fashion houses, fintech pioneers, and cultural institutions to shape digital products that command attention and drive real business growth.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SELECTED WORK (EDITORIAL NON-CARD LAYOUTS)
+       ========================================================================== -->
+  <section class="section-padding" id="work">
+    <div class="container">
+      <div class="reveal-on-scroll" style="margin-bottom:48px;">
+        <span class="section-tag">SELECTED WORK</span>
+        <h2>Identities, Products & Campaigns</h2>
+        <p class="subheading">A selection of recent projects created with ambitious teams.</p>
+      </div>
+
+      <div class="projects-list">
+        <!-- Project 01 -->
+        <article class="project-card reveal-on-scroll" data-layout="horizontal-hero" onclick="openProjectModal('proj-01')">
+          <div class="project-visual-box">
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop" alt="VANTA Fintech Brand Strategy" class="project-img">
+          </div>
+          <div class="project-meta-bar">
+            <div>
+              <span class="project-category">PROJECT 01 • Fintech / Brand Strategy</span>
+              <h3 class="project-title">VANTA</h3>
+            </div>
+            <span style="font-family:var(--font-display); font-size:1.1rem; color:var(--text-muted);">2024</span>
+          </div>
+        </article>
+
+        <!-- Project 02 -->
+        <article class="project-card reveal-on-scroll" data-layout="portrait-editorial" onclick="openProjectModal('proj-02')">
+          <div class="project-visual-box" style="aspect-ratio:3/4;">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1200&auto=format&fit=crop" alt="SORA Fashion Digital Experience" class="project-img">
+          </div>
+          <div>
+            <span class="project-category">PROJECT 02 • Fashion / Digital Experience</span>
+            <h3 class="project-title">SORA</h3>
+            <p style="margin-top:16px; color:var(--text-muted); font-size:1.1rem;">High-fashion e-commerce experience with interactive 3D runway previews.</p>
+            <span class="btn-link" style="display:inline-block; margin-top:24px; color:var(--color-accent); font-weight:700;">Explore Project →</span>
+          </div>
+        </article>
+
+        <!-- Project 03 -->
+        <article class="project-card reveal-on-scroll" data-layout="asymmetric-grid" onclick="openProjectModal('proj-03')">
+          <div>
+            <span class="project-category">PROJECT 03 • Hospitality / Brand Identity</span>
+            <h3 class="project-title">MORROW</h3>
+            <p style="margin-top:16px; color:var(--text-muted); font-size:1.1rem;">Sensory brand identity and digital booking engine for boutique alpine retreats in Switzerland.</p>
+            <span class="btn-link" style="display:inline-block; margin-top:24px; color:var(--color-accent); font-weight:700;">Explore Project →</span>
+          </div>
+          <div class="project-visual-box">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1200&auto=format&fit=crop" alt="MORROW Hospitality Brand Identity" class="project-img">
+          </div>
+        </article>
+
+        <!-- Project 04 -->
+        <article class="project-card reveal-on-scroll" data-layout="full-width-visual" onclick="openProjectModal('proj-04')">
+          <div class="project-visual-box" style="aspect-ratio:21/9;">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop" alt="KAIRO Technology Product Design" class="project-img">
+          </div>
+          <div class="project-meta-bar">
+            <div>
+              <span class="project-category">PROJECT 04 • Technology / Product Design</span>
+              <h3 class="project-title">KAIRO</h3>
+            </div>
+            <span style="font-family:var(--font-display); font-size:1.1rem; color:var(--text-muted);">2023</span>
+          </div>
+        </article>
+
+        <!-- Project 05 -->
+        <article class="project-card reveal-on-scroll" data-layout="split-editorial" onclick="openProjectModal('proj-05')">
+          <div class="project-visual-box">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" alt="ASTER Culture Campaign" class="project-img">
+          </div>
+          <div>
+            <span class="project-category">PROJECT 05 • Culture / Campaign</span>
+            <h3 class="project-title">ASTER</h3>
+            <p style="margin-top:16px; color:var(--text-muted); font-size:1.1rem;">Global brand campaign celebrating sustainable architectural heritage in Northern Europe.</p>
+            <span class="btn-link" style="display:inline-block; margin-top:24px; color:var(--color-accent); font-weight:700;">Explore Project →</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 10: INTERACTIVE EXPERTISE ("WHAT I DO")
+       ========================================================================== -->
+  <section class="section-padding" id="expertise" style="background-color:var(--bg-card);">
+    <div class="container">
+      <div class="reveal-on-scroll" style="margin-bottom:48px;">
+        <span class="section-tag">CAPABILITIES</span>
+        <h2>WHAT I DO</h2>
+        <p class="subheading">End-to-end creative direction, brand strategy, and interaction design.</p>
+      </div>
+
+      <div class="expertise-grid reveal-on-scroll">
+        <div class="expertise-list" id="expertise-list-container">
+          <!-- Rendered dynamically by js/main.js -->
+        </div>
+
+        <div class="expertise-preview-box">
+          <img id="expertise-preview-img" src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=600&auto=format&fit=crop" alt="Capabilities Preview" class="expertise-preview-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CAREER EXPERIENCE TIMELINE
+       ========================================================================== -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="reveal-on-scroll">
+        <span class="section-tag">BACKGROUND & TIMELINE</span>
+        <h2>Career Journey</h2>
+      </div>
+
+      <div class="timeline reveal-on-scroll">
+        <div class="timeline-item">
+          <div class="timeline-year">2024 — PRESENT</div>
+          <div>
+            <h3 class="timeline-role">Independent Creative Director</h3>
+            <div class="timeline-company">Adrian Vale Studio • London</div>
+            <p style="color:var(--text-muted);">Working directly with ambitious startup founders, fashion houses, and tech platforms to create memorable brands and digital experiences.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2021 — 2024</div>
+          <div>
+            <h3 class="timeline-role">Creative Lead</h3>
+            <div class="timeline-company">Northline Studio • London & Berlin</div>
+            <p style="color:var(--text-muted);">Led brand identity and product design projects across technology, luxury consumer goods, and cultural institutions.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2018 — 2021</div>
+          <div>
+            <h3 class="timeline-role">Senior Designer</h3>
+            <div class="timeline-company">Studio 48 • London</div>
+            <p style="color:var(--text-muted);">Created digital design systems, mobile apps, and interactive web campaigns for emerging European tech companies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       RECOGNITION / AWARDS
+       ========================================================================== -->
+  <section class="section-padding" style="background-color:var(--bg-card); border-top:1px solid var(--border-color);">
+    <div class="container">
+      <div class="reveal-on-scroll">
+        <span class="section-tag">RECOGNITION</span>
+        <h2>Industry Honors</h2>
+      </div>
+
+      <div class="awards-grid reveal-on-scroll">
+        <div class="award-card">
+          <h3 class="award-title">Awwwards</h3>
+          <div class="award-category">Site of the Month • 2024</div>
+        </div>
+        <div class="award-card">
+          <h3 class="award-title">CSS Design Awards</h3>
+          <div class="award-category">Special Kudos & Best UI • 2023</div>
+        </div>
+        <div class="award-card">
+          <h3 class="award-title">D&AD Awards</h3>
+          <div class="award-category">Graphite Pencil Winner • 2022</div>
+        </div>
+        <div class="award-card">
+          <h3 class="award-title">FWA of the Day</h3>
+          <div class="award-category">Digital Experience Winner • 2023</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PHILOSOPHY MAJOR STATEMENT (DARK SECTION)
+       ========================================================================== -->
+  <section class="philosophy-section" id="philosophy">
+    <div class="container">
+      <div class="reveal-on-scroll">
+        <span class="section-tag" style="color:var(--color-accent);">PHILOSOPHY</span>
+        <h2 class="philosophy-statement">
+          GOOD DESIGN<br>
+          ISN'T DECORATION.<br>
+          IT'S <span>DIRECTION.</span>
+        </h2>
+        <p class="philosophy-copy">
+          "Design should make decisions clearer, ideas stronger, and experiences more meaningful. The goal isn't simply to make something beautiful—it is to make something matter."
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       WRITING / INSIGHTS
+       ========================================================================== -->
+  <section class="section-padding" id="writing">
+    <div class="container">
+      <div class="reveal-on-scroll">
+        <span class="section-tag">WRITING</span>
+        <h2>Thoughts & Observations</h2>
+        <p class="subheading">Essays on brand strategy, digital design, and clarity.</p>
+      </div>
+
+      <div class="articles-grid reveal-on-scroll">
+        <article class="article-card">
+          <div>
+            <span class="article-meta">STRATEGY • 5 MIN READ</span>
+            <h3 class="article-title">Why brands fail before they launch</h3>
+          </div>
+          <a href="#contact" class="btn-link" style="color:var(--color-accent); font-weight:700;">Read Essay →</a>
+        </article>
+
+        <article class="article-card">
+          <div>
+            <span class="article-meta">DESIGN • 4 MIN READ</span>
+            <h3 class="article-title">Designing for attention, not noise</h3>
+          </div>
+          <a href="#contact" class="btn-link" style="color:var(--color-accent); font-weight:700;">Read Essay →</a>
+        </article>
+
+        <article class="article-card">
+          <div>
+            <span class="article-meta">DIGITAL • 6 MIN READ</span>
+            <h3 class="article-title">What makes a digital experience memorable?</h3>
+          </div>
+          <a href="#contact" class="btn-link" style="color:var(--color-accent); font-weight:700;">Read Essay →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TESTIMONIALS
+       ========================================================================== -->
+  <section class="section-padding" style="background-color:var(--bg-card);">
+    <div class="container">
+      <div class="reveal-on-scroll">
+        <span class="section-tag">TESTIMONIALS</span>
+        <h2>What Collaborators Say</h2>
+      </div>
+
+      <div class="testimonials-grid reveal-on-scroll">
+        <div class="testimonial-card">
+          <p class="testimonial-quote">
+            "Adrian has an unusual ability to simplify complicated ideas without making them feel smaller."
+          </p>
+          <div>
+            <div class="testimonial-author">Maya Chen</div>
+            <div class="testimonial-role">Founder, Vanta Capital</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-quote">
+            "His design leadership transformed our AI telemetry platform from a complex tool into an elegant product users love."
+          </p>
+          <div>
+            <div class="testimonial-author">Liam Thorne</div>
+            <div class="testimonial-role">CEO, Kairo Labs</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-quote">
+            "Adrian brought an elevated editorial sensibility to our Swiss resort brand that completely reset client expectations."
+          </p>
+          <div>
+            <div class="testimonial-author">Elena Rostova</div>
+            <div class="testimonial-role">Creative Director, Morrow Resorts</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       DRAMATIC CONTACT SECTION
+       ========================================================================== -->
+  <section class="section-padding" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="reveal-on-scroll">
+          <span class="section-tag">START A CONVERSATION</span>
+          <h2 class="contact-headline">
+            LET'S MAKE<br>
+            SOMETHING<br>
+            <span>MATTER.</span>
+          </h2>
+          <p class="subheading" style="margin-bottom:32px;">Have a project, idea, or ambitious problem worth solving? Let's talk.</p>
+          <p style="font-size:1.1rem; font-weight:700; margin-bottom:12px;">Email Directly:</p>
+          <a href="mailto:hello@adrianvale.demo" style="font-family:var(--font-display); font-size:1.6rem; color:var(--color-accent);">hello@adrianvale.demo</a>
+
+          <div style="display:flex; gap:24px; margin-top:40px; font-family:var(--font-display); font-weight:700; text-transform:uppercase; font-size:0.9rem;">
+            <a href="https://linkedin.com" target="_blank">LinkedIn ↗</a>
+            <a href="https://instagram.com" target="_blank">Instagram ↗</a>
+            <a href="https://behance.net" target="_blank">Behance ↗</a>
+          </div>
+        </div>
+
+        <div class="reveal-on-scroll" style="background-color:var(--bg-card); border:1px solid var(--border-color); padding:48px; border-radius:var(--radius-sm);">
+          <h3 style="margin-bottom:24px;">Project Inquiry</h3>
+          <form id="contact-form" class="form-grid">
+            <div>
+              <input type="text" name="name" placeholder="Your Full Name" class="form-control" required>
+            </div>
+            <div>
+              <input type="email" name="email" placeholder="Email Address" class="form-control" required>
+            </div>
+            <div class="form-full">
+              <input type="text" name="company" placeholder="Company / Organization" class="form-control">
+            </div>
+            <div class="form-full">
+              <select name="type" class="form-control" required>
+                <option value="" disabled selected>Select Project Type</option>
+                <option value="brand">Brand Strategy & Identity</option>
+                <option value="digital">Digital Product / UI UX</option>
+                <option value="website">High-End Web Application</option>
+                <option value="direction">Creative Direction Retainer</option>
+              </select>
+            </div>
+            <div class="form-full">
+              <textarea name="message" placeholder="Tell me about your project, timeline, and goals..." rows="4" class="form-control" required></textarea>
+            </div>
+            <div class="form-full">
+              <button type="submit" class="btn btn-primary" style="width:100%;">Start a Conversation →</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 ADRIAN VALE. All rights reserved.</div>
+        <div style="font-style:italic;">Adrian Vale is a fictional portfolio demonstration project.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Detail Modal -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal-box" style="max-width:900px; text-align:left;">
+      <button class="modal-close-btn" onclick="closeProjectModal()">✕</button>
+      <div id="project-modal-content">
+        <!-- Rendered dynamically by js/main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Confirmation Modal -->
+  <div class="modal-overlay" id="contact-modal">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="contact-modal-close">✕</button>
+      <h3 id="contact-modal-title" style="margin-bottom:16px;">Message Received</h3>
+      <p id="contact-modal-text" style="color:var(--text-muted); margin-bottom:32px;">Thank you. Adrian will contact you shortly.</p>
+      <button class="btn btn-primary" onclick="closeContactConfirmation()">Close Window →</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/projects.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
