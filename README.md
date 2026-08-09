@@ -1,51 +1,50 @@
-# Adrian Vale — Executive Creative Director Portfolio
+# Adrian Vale Portfolio
 
-![Adrian Vale](https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1200&auto=format&fit=crop)
+Professional personal-brand portfolio website for a creative director and digital strategist.
 
-**Adrian Vale** is an editorial personal brand portfolio built for Executive Creative Directors, Senior Product Designers, and Design Leaders.
+## Live Demo
 
----
-
-## 🚀 Live Demo
-
-- **Public Live Application**: [https://adrian-vale-portfolio.onrender.com/](https://adrian-vale-portfolio.onrender.com/)
+- **[View Live Demo](https://adrian-vale-portfolio.onrender.com/)**
 - **GitHub Repository**: [https://github.com/AvixLabs-Official/Adrian-Vale-Portfolio](https://github.com/AvixLabs-Official/Adrian-Vale-Portfolio)
 
----
+## Overview
 
-## ✨ Key Features
+Adrian Vale is an editorial personal brand portfolio built for Executive Creative Directors, Senior Product Designers, and Strategy Leaders.
 
-- **Fluid Custom Cursor**: Smooth interactive cursor follower with context-aware scaling.
-- **Dynamic Case Study Switcher**: Interactive accordion previewing featured projects, design deliverables, and outcome metrics.
-- **Selected Work Filter Engine**: Filter projects by UI/UX, Design Systems, Mobile Apps, and Brand Strategy.
-- **Direct Contact & Resume Drawer**: Downloadable CV link and contact inquiry form.
+Features include dynamic case study accordions, custom cursor interaction, category portfolio filtering, and contact drawers.
 
----
+> **Disclaimer**: This is a portfolio demonstration project and not a client project.
 
-## 🛠️ Tech Stack
+## Features
 
-- **Frontend**: HTML5, Vanilla CSS3, JavaScript (ES6+)
-- **Backend**: Node.js `server.js` HTTP Server
-- **Deployment**: Render Web Service
+- Fluid custom cursor follower with scale interactions
+- Dynamic accordion case study preview switcher
+- Selected work filtering (UI/UX, Brand, Design Systems)
+- Contact & resume request modal drawer
+- Editorial dark theme typography
 
----
+## Technologies
 
-## 💻 Local Installation & Setup
+- HTML5
+- CSS3 (Editorial Typography & Micro-Interactions)
+- JavaScript (ES6+ Cursor & Accordion Engine)
+- Node.js HTTP Server (`server.js`)
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/AvixLabs-Official/Adrian-Vale-Portfolio.git
-   cd Adrian-Vale-Portfolio
-   ```
+## Screenshots
 
-2. **Start Node Server**:
-   ```bash
-   node server.js
-   ```
-   Open `http://localhost:8084` in your browser.
+![Adrian Vale Interface](images/adrian_vale_preview.jpg)
 
----
+## Responsive Design
 
-## 📄 License
+Engineered and tested across viewports:
+- Desktop (1440px +)
+- Tablet (768px – 1024px)
+- Mobile (360px – 480px)
 
-Developed by **[Avix / AvixLabs](https://github.com/AvixLabs-Official)**. Released under the MIT License.
+## Project Type
+
+Portfolio Demonstration · Personal Brand
+
+## Disclaimer
+
+This project is a portfolio demonstration created to showcase frontend development, UI/UX, and interactive web-development capabilities. It is not presented as client work.
