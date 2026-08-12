@@ -1,6 +1,6 @@
 /* ==========================================================================
-   ADRIAN VALE - Master Ultra-Responsive Stylesheet
-   Supports all screen sizes down to 250px (Mobile, Foldables, Tablets, Desktop)
+   ADRIAN VALE - Master Ultra-Responsive & Harmonized Layout Stylesheet
+   Standardized Margins, Paddings, & Precise Alignment across All Viewports
    ========================================================================== */
 
 /* Zero Horizontal Overflow Lock */
@@ -21,60 +21,99 @@ h1, h2, h3, h4, .hero-title, .intro-heading, .philosophy-statement, .contact-hea
   word-break: break-word !important;
 }
 
+/* Base Responsive Container Paddings */
+.container {
+  width: 100% !important;
+  max-width: 1360px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 32px !important;
+  padding-right: 32px !important;
+}
+
+.section-padding {
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+}
+
+/* ==========================================================================
+   DESKTOP BREAKPOINTS (1200px - 992px)
+   ========================================================================== */
 @media (max-width: 1200px) {
-  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
-  .intro-grid { grid-template-columns: 1fr; gap: 40px; }
-  .expertise-grid { grid-template-columns: 1fr; gap: 40px; }
-  .expertise-preview-box { display: none; }
-  .articles-grid, .testimonials-grid, .awards-grid { grid-template-columns: repeat(2, 1fr); }
-  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .container { padding-left: 28px !important; padding-right: 28px !important; }
+  .section-padding { padding-top: 80px !important; padding-bottom: 80px !important; }
+  .hero-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+  .intro-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+  .expertise-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+  .expertise-preview-box { display: none !important; }
+  .articles-grid, .testimonials-grid, .awards-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 24px !important; }
+  .contact-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+  .projects-list { gap: 80px !important; }
 }
 
 @media (max-width: 992px) {
   .nav-links, .nav-actions-desktop { display: none !important; }
   .mobile-toggle { display: flex !important; align-items: center; justify-content: center; }
+  
   .project-card[data-layout="portrait-editorial"],
   .project-card[data-layout="asymmetric-grid"],
-  .project-card[data-layout="split-editorial"] { grid-template-columns: 1fr !important; }
-  .timeline-item { grid-template-columns: 1fr; gap: 12px; }
+  .project-card[data-layout="split-editorial"] {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  
+  .timeline-item { grid-template-columns: 1fr !important; gap: 12px !important; padding-top: 24px !important; padding-bottom: 24px !important; }
 }
 
+/* ==========================================================================
+   TABLET & MOBILE BREAKPOINTS (768px - 650px)
+   ========================================================================== */
 @media (max-width: 768px) {
-  /* Show Mobile Bottom Navigation Dock */
-  .mobile-bottom-dock {
-    display: flex !important;
-  }
+  .mobile-bottom-dock { display: flex !important; }
 
-  body {
-    padding-bottom: 70px !important;
-  }
+  body { padding-bottom: 70px !important; }
 
-  .container { padding: 0 20px !important; }
-  .section-padding { padding: 60px 0 !important; }
+  .container { padding-left: 20px !important; padding-right: 20px !important; }
+  .section-padding { padding-top: 60px !important; padding-bottom: 60px !important; }
 
   .hero-title {
-    font-size: clamp(2.5rem, 10vw, 4.2rem) !important;
+    font-size: clamp(2.4rem, 10vw, 4rem) !important;
     line-height: 1.05 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .hero-subtitle {
+    font-size: 0.8rem !important;
+    margin-bottom: 12px !important;
+  }
+
+  .hero-statement {
+    font-size: 1.25rem !important;
+    margin-bottom: 24px !important;
   }
 
   .intro-heading {
-    font-size: clamp(1.8rem, 6vw, 3rem) !important;
+    font-size: clamp(1.8rem, 6vw, 2.8rem) !important;
+    line-height: 1.15 !important;
   }
 
   .philosophy-statement {
-    font-size: clamp(2rem, 7vw, 3.5rem) !important;
+    font-size: clamp(1.8rem, 7vw, 3.2rem) !important;
+    margin-bottom: 24px !important;
   }
 
-  .articles-grid, .testimonials-grid, .awards-grid { grid-template-columns: 1fr; gap: 24px; }
-  .form-grid { grid-template-columns: 1fr; }
-  .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
-  .hero-meta-strip { flex-direction: column; gap: 12px; }
+  .articles-grid, .testimonials-grid, .awards-grid { grid-template-columns: 1fr !important; gap: 20px !important; }
+  .form-grid { grid-template-columns: 1fr !important; gap: 16px !important; }
+  .footer-bottom { flex-direction: column !important; gap: 12px !important; text-align: center !important; }
+  .hero-meta-strip { flex-direction: column !important; gap: 8px !important; align-items: flex-start !important; }
+  .projects-list { gap: 48px !important; }
 }
 
 @media (max-width: 650px) {
-  .container { padding: 0 16px !important; }
-  
-  /* Project Modal Drawer on Mobile */
+  .container { padding-left: 16px !important; padding-right: 16px !important; }
+  .section-padding { padding-top: 48px !important; padding-bottom: 48px !important; }
+
+  /* Modals Overlay Drawer on Mobile */
   .modal-overlay {
     padding: 0 !important;
     align-items: flex-end !important;
@@ -105,27 +144,32 @@ h1, h2, h3, h4, .hero-title, .intro-heading, .philosophy-statement, .contact-hea
   }
 
   .expertise-title {
-    font-size: 1.3rem !important;
+    font-size: 1.25rem !important;
   }
 
   .expertise-desc {
     padding-left: 0 !important;
-    font-size: 0.95rem !important;
+    font-size: 0.92rem !important;
+    margin-top: 8px !important;
   }
 }
 
-/* Ultra-Narrow Mobile Screens (250px - 400px) */
+/* ==========================================================================
+   ULTRA-NARROW MOBILE SCREENS (250px - 400px)
+   ========================================================================== */
 @media (max-width: 400px) {
-  .container { padding: 0 12px !important; }
-  
+  .container { padding-left: 12px !important; padding-right: 12px !important; }
+  .section-padding { padding-top: 40px !important; padding-bottom: 40px !important; }
+
   .hero-title {
-    font-size: clamp(2rem, 9vw, 3rem) !important;
+    font-size: clamp(2rem, 9vw, 2.8rem) !important;
   }
 
   .btn {
     width: 100% !important;
     justify-content: center !important;
     text-align: center !important;
+    padding: 14px 20px !important;
   }
 
   .project-meta-grid {
