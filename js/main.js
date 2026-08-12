@@ -33,6 +33,7 @@ function initMobileMenu() {
 
   toggleBtn.addEventListener('click', () => {
     drawer.classList.add('active');
+    document.body.classList.add('drawer-open');
     document.body.style.overflow = 'hidden';
   });
 
@@ -49,6 +50,7 @@ function closeMobileDrawer() {
   const drawer = document.getElementById('mobile-drawer');
   if (drawer) {
     drawer.classList.remove('active');
+    document.body.classList.remove('drawer-open');
     document.body.style.overflow = '';
   }
 }
@@ -133,6 +135,7 @@ function openProjectModal(projId) {
   `;
 
   modal.classList.add('active');
+  document.body.classList.add('drawer-open');
   document.body.style.overflow = 'hidden';
 }
 
@@ -140,6 +143,7 @@ function closeProjectModal() {
   const modal = document.getElementById('project-modal');
   if (modal) {
     modal.classList.remove('active');
+    document.body.classList.remove('drawer-open');
     document.body.style.overflow = '';
   }
 }
