@@ -65,7 +65,9 @@ function initExpertiseList() {
       <div class="expertise-item-header">
         <span class="expertise-num">${item.num}</span>
         <h3 class="expertise-title">${item.title}</h3>
-        <span class="expertise-arrow">→</span>
+        <span class="expertise-arrow" style="display:inline-flex; align-items:center;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </span>
       </div>
       <div class="expertise-body">
         <p class="expertise-desc">${item.desc}</p>
